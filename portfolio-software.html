@@ -1,172 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Software Development</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio - v3.9.1
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Software Development — Sabin Tiwari</title>
+<style>
+:root{--bg:#07070f;--fg:#eef0ff;--mut:#9aa0c3;--card:rgba(255,255,255,.06);--bd:rgba(255,255,255,.12);--a:#7c5cff;--b:#00e0ff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f4f5ff;--fg:#14152b;--mut:#555a80;--card:rgba(255,255,255,.75);--bd:rgba(20,21,43,.12)}}
+:root[data-theme="light"]{--bg:#f4f5ff;--fg:#14152b;--mut:#555a80;--card:rgba(255,255,255,.75);--bd:rgba(20,21,43,.12)}
+:root[data-theme="dark"]{--bg:#07070f;--fg:#eef0ff;--mut:#9aa0c3;--card:rgba(255,255,255,.06);--bd:rgba(255,255,255,.12)}
+html{scroll-behavior:smooth}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Poppins,system-ui,sans-serif;line-height:1.6}
+#bg{position:fixed;inset:0;z-index:0;width:100%;height:100%}
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:14px 5vw;backdrop-filter:blur(12px);background:linear-gradient(var(--bg),transparent)}
+nav div{display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--mut);text-decoration:none;font-size:14px}nav a:hover{color:var(--fg)}
+main{position:relative;z-index:1;max-width:1100px;margin:auto;padding:110px 5vw 40px}
+h1{font-size:clamp(34px,6vw,60px);line-height:1.1;margin:0 0 14px}h2{margin:0 0 14px}h3{margin:0 0 6px}
+.g{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+p,li{color:var(--mut)}p{max-width:720px}
+.btn{display:inline-block;margin:14px 10px 0 0;padding:12px 26px;border-radius:30px;background:linear-gradient(90deg,var(--a),var(--b));color:#fff;text-decoration:none;font-weight:600}
+.btn.o{background:none;border:1px solid var(--bd);color:var(--fg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;perspective:1000px;margin-top:26px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:24px;backdrop-filter:blur(10px);transform-style:preserve-3d;transition:transform .15s ease-out,box-shadow .3s}
+.card:hover{box-shadow:0 20px 50px rgba(124,92,255,.3)}
+.card h3{transform:translateZ(34px)}.card p{margin:0;transform:translateZ(16px)}
+.ico{font-size:34px;display:block;transform:translateZ(50px)}
+footer{position:relative;z-index:1;text-align:center;padding:30px;color:var(--mut);font-size:14px}
+@media(max-width:640px){nav b{display:none}nav div{gap:10px}nav a{font-size:12px}}
+</style>
 </head>
-
-<body>
-
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Sabin Tiwari</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/sabintiwari27/" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/sabin_tiwarii/" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/sabin-tiwari-710a20237" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="index.html" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
-
-  <main id="main">
-
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2></h2>
-          <ol>
-          
-            <li></li>
-          </ol>
-        </div>
-
-      </div>
-    </section><!-- End Breadcrumbs -->
-
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-7.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-6.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-5.jpg" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Software Development</h3>
-              <ul>
-               As a software developer, my goal is to build high-quality, reliable, and efficient applications that solve real-world problems. I am constantly learning and staying up-to-date with the latest technologies and best practices in the industry. Whether it's developing a web application, a mobile app, or a desktop application, I take pride in my work and strive to deliver the best possible solution for my clients.
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2></h2>
-              <p>
-                
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Details Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Sabin Tiwari</span></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Designed by <a href="https://sabintiwari.com.np/">Sabin Tiwari</a>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+<body data-shape="box">
+<canvas id="bg"></canvas>
+<nav><b>Sabin<span style="color:var(--a)">.</span></b>
+<div><a href="index.html">Home</a><a href="index.html#about">About</a><a href="index.html#resume">Resume</a><a href="index.html#services">Services</a><a href="index.html#contact">Contact</a></div></nav>
+<main>
+<p style="margin:0 0 6px;color:var(--b)">💻 Service</p>
+<h1 class="g">Software Development</h1>
+<p>I develop software tailored to your needs, from small tools that automate daily work to larger applications for your business. Backed by a BCA degree and hands-on IT experience, I focus on solutions that are practical, reliable and easy to use.</p>
+<div class="grid"><div class="card tilt"><span class="ico">🧩</span><h3>Custom Applications</h3><p>Built around how your business actually works.</p></div><div class="card tilt"><span class="ico">⚙️</span><h3>Automation</h3><p>Reduce repetitive manual tasks.</p></div><div class="card tilt"><span class="ico">🛠️</span><h3>Support</h3><p>Updates and help after delivery.</p></div></div>
+<a class="btn" href="index.html#contact">Hire me</a><a class="btn o" href="index.html#services">← All services</a>
+</main>
+<footer>© Copyright Sabin Tiwari</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+document.querySelectorAll('.tilt').forEach(function(el){
+ el.addEventListener('mousemove',function(e){var b=el.getBoundingClientRect(),x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;el.style.transform='rotateY('+x*14+'deg) rotateX('+-y*14+'deg) translateZ(8px)'});
+ el.addEventListener('mouseleave',function(){el.style.transform=''})});
+var c=document.getElementById('bg'),r;
+try{r=new THREE.WebGLRenderer({canvas:c,alpha:true,antialias:true})}catch(e){return}
+r.setPixelRatio(Math.min(devicePixelRatio,2));
+var s=new THREE.Scene(),cam=new THREE.PerspectiveCamera(60,1,.1,100);cam.position.z=8;
+var geos={ico:new THREE.IcosahedronGeometry(2.2,1),box:new THREE.BoxGeometry(2.4,2.4,2.4,3,3,3),knot:new THREE.TorusKnotGeometry(1.6,.5,100,12),torus:new THREE.TorusGeometry(2,.7,12,36)};
+var m=new THREE.Mesh(geos[document.body.dataset.shape],new THREE.MeshBasicMaterial({color:0x7c5cff,wireframe:true,transparent:true,opacity:.5}));
+m.position.set(3.5,0,-1);s.add(m);
+var n=600,pos=new Float32Array(n*3);for(var i=0;i<n*3;i++)pos[i]=(Math.random()-.5)*30;
+var pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pos,3));
+var pts=new THREE.Points(pg,new THREE.PointsMaterial({color:0x9aa0ff,size:.05}));s.add(pts);
+var mx=0,my=0;addEventListener('mousemove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+function rs(){r.setSize(innerWidth,innerHeight,false);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()}
+addEventListener('resize',rs);rs();
+var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function loop(t){t*=.001;m.rotation.x=t*.3+my;m.rotation.y=t*.4+mx*2;pts.rotation.y=t*.02;r.render(s,cam);if(!reduce)requestAnimationFrame(loop)}
+requestAnimationFrame(loop);
+})();
+</script>
 </body>
-
 </html>
