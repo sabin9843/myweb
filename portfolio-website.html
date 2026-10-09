@@ -3,120 +3,47 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Sabin Tiwari — Hardware/Networking Engineer & Web Developer</title>
+<title>Website Development — Sabin Tiwari</title>
 <style>
 :root{--bg:#07070f;--fg:#eef0ff;--mut:#9aa0c3;--card:rgba(255,255,255,.06);--bd:rgba(255,255,255,.12);--a:#7c5cff;--b:#00e0ff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f4f5ff;--fg:#14152b;--mut:#555a80;--card:rgba(255,255,255,.75);--bd:rgba(20,21,43,.12)}}
 :root[data-theme="light"]{--bg:#f4f5ff;--fg:#14152b;--mut:#555a80;--card:rgba(255,255,255,.75);--bd:rgba(20,21,43,.12)}
 :root[data-theme="dark"]{--bg:#07070f;--fg:#eef0ff;--mut:#9aa0c3;--card:rgba(255,255,255,.06);--bd:rgba(255,255,255,.12)}
-html{scroll-behavior:smooth;scroll-padding-top:70px}*{box-sizing:border-box}
+html{scroll-behavior:smooth}*{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:Poppins,system-ui,sans-serif;line-height:1.6}
 #bg{position:fixed;inset:0;z-index:0;width:100%;height:100%}
 nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:14px 5vw;backdrop-filter:blur(12px);background:linear-gradient(var(--bg),transparent)}
 nav div{display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--mut);text-decoration:none;font-size:14px}nav a:hover{color:var(--fg)}
-section{position:relative;z-index:1;min-height:90vh;padding:100px 5vw 40px;max-width:1100px;margin:auto;display:flex;flex-direction:column;justify-content:center}
-h1{font-size:clamp(40px,8vw,80px);line-height:1.05;margin:0 0 12px}
-h2{font-size:clamp(28px,4vw,42px);margin:0 0 24px}h3{margin:0 0 6px}
+main{position:relative;z-index:1;max-width:1100px;margin:auto;padding:110px 5vw 40px}
+h1{font-size:clamp(34px,6vw,60px);line-height:1.1;margin:0 0 14px}h2{margin:0 0 14px}h3{margin:0 0 6px}
 .g{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
-p,li{color:var(--mut)}p{max-width:700px}
-.btn{display:inline-block;margin:10px 10px 0 0;padding:12px 26px;border-radius:30px;background:linear-gradient(90deg,var(--a),var(--b));color:#fff;text-decoration:none;font-weight:600;border:0;cursor:pointer;font:inherit;font-weight:600}
+p,li{color:var(--mut)}p{max-width:720px}
+.btn{display:inline-block;margin:14px 10px 0 0;padding:12px 26px;border-radius:30px;background:linear-gradient(90deg,var(--a),var(--b));color:#fff;text-decoration:none;font-weight:600}
 .btn.o{background:none;border:1px solid var(--bd);color:var(--fg)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;perspective:1000px}
-.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:24px;backdrop-filter:blur(10px);transform-style:preserve-3d;transition:transform .15s ease-out,box-shadow .3s;color:inherit;text-decoration:none;display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;perspective:1000px;margin-top:26px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:24px;backdrop-filter:blur(10px);transform-style:preserve-3d;transition:transform .15s ease-out,box-shadow .3s}
 .card:hover{box-shadow:0 20px 50px rgba(124,92,255,.3)}
-.card h3{transform:translateZ(36px)}.card p,.card ul{transform:translateZ(18px);margin:0}
-.num{font-size:40px;font-weight:700;transform:translateZ(50px)}
-.bar{height:8px;border-radius:8px;background:var(--bd);margin:6px 0 16px;overflow:hidden}
-.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--a),var(--b));transition:width 1.4s ease}
-.row{display:flex;justify-content:space-between;font-size:14px}
-ul{padding-left:18px;margin:8px 0}
-.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:6px 24px;margin-top:16px}
-.info span{color:var(--mut)}.info b{color:var(--fg)}
-form{display:grid;gap:12px;max-width:520px}
-input,textarea{padding:14px;border-radius:12px;border:1px solid var(--bd);background:var(--card);color:var(--fg);font:inherit}
-a.l{color:var(--b)}
+.card h3{transform:translateZ(34px)}.card p{margin:0;transform:translateZ(16px)}
+.ico{font-size:34px;display:block;transform:translateZ(50px)}
 footer{position:relative;z-index:1;text-align:center;padding:30px;color:var(--mut);font-size:14px}
 @media(max-width:640px){nav b{display:none}nav div{gap:10px}nav a{font-size:12px}}
 </style>
 </head>
-<body>
+<body data-shape="ico">
 <canvas id="bg"></canvas>
 <nav><b>Sabin<span style="color:var(--a)">.</span></b>
-<div><a href="#home">Home</a><a href="#about">About</a><a href="#resume">Resume</a><a href="#services">Services</a><a href="#contact">Contact</a></div></nav>
-
-<section id="home">
-<p style="margin:0 0 6px;color:var(--b)">Hello, I'm</p>
-<h1><span class="g">Sabin Tiwari</span></h1>
-<h3 style="font-weight:500;font-size:clamp(18px,3vw,26px)">Hardware/Networking Engineer & Web Developer</h3>
-<p>Based in Kathmandu, Nepal. Freelance: <b style="color:#00e0a0">Available</b></p>
-<div><a class="btn" href="#contact">Hire me</a><a class="btn o" href="#resume">View resume</a></div>
-</section>
-
-<section id="about">
-<h2>About <span class="g">me</span></h2>
-<div class="grid" style="margin-bottom:30px">
-<div class="card tilt"><div class="num g">1000</div><p>Happy Clients</p></div>
-<div class="card tilt"><div class="num g">7000</div><p>Hours of Support</p></div>
-<div class="card tilt"><div class="num g">10</div><p>Awards</p></div>
-</div>
-<div class="grid">
-<div class="card tilt"><h3>Info</h3>
-<div class="info" style="grid-template-columns:1fr"><div><span>Name: </span><b>Sabin Tiwari</b></div><div><span>Phone: </span><b>+977 9843772082</b></div><div><span>City: </span><b>Kathmandu, Nepal</b></div><div><span>Email: </span><b>sabintiwari27@gmail.com</b></div><div><span>Freelance: </span><b>Available</b></div><div><span>Degree: </span><b>BCA (IGNOU)</b></div><div><span>Experience: </span><b>6 years</b></div></div></div>
-<div class="card tilt"><h3>Skills</h3>
-<div class="row"><span>Hardware</span><span>100%</span></div><div class="bar"><i data-w="100"></i></div>
-<div class="row"><span>Networking</span><span>90%</span></div><div class="bar"><i data-w="90"></i></div>
-<div class="row"><span>Web Design</span><span>75%</span></div><div class="bar"><i data-w="75"></i></div></div>
-</div>
-</section>
-
-<section id="resume">
-<h2>My <span class="g">resume</span></h2>
-<div class="grid">
-<div class="card tilt"><h3>Summary</h3><p>Technologically-inclined Network Professional with 6 years of experience in IT and network support and maintenance of technical equipment. Proven analytical and problem-solving abilities for prioritizing and executing tasks in high-pressure environments. Expert knowledge of major OS environments, including Windows and Linux.</p>
-<h3 style="margin-top:20px">Education</h3>
-<p><b>Hardware Network Engineering & Graphic Design</b><br>2018 – 2022 · DAV Institute of Information Technology, Lalitpur</p>
-<p style="margin-top:8px"><b>Bachelor of Computer Applications (BCA)</b><br>Indira Gandhi National Open University (IGNOU), Delhi — completed</p>
-<p style="margin-top:8px"><b>Plus 2 Humanities</b><br>Jalpadevi Secondary School</p>
-<h3 style="margin-top:20px">Certifications</h3>
-<ul><li>NSTB Level II — Computer Hardware Technician</li><li>CCNA — 90-hour training completed</li></ul></div>
-<div class="card tilt"><h3>Professional Experience</h3>
-<p><b>IT Officer</b><br>Buddha Air</p>
-<p style="margin-top:12px"><b>System Administrator</b><br>Himalayan Computer Trades</p>
-<p style="margin-top:12px"><b>Network Administrator</b><br>Himalayan Integrated Cloud Technologies</p>
-<h3 style="margin-top:20px">Key Responsibilities</h3>
-<ul><li>Configured WAN, LAN and related equipment to achieve the desired size and performance for each network</li><li>Installed and integrated new hardware and software systems into existing infrastructure</li><li>Planned long-term capacity for future hardware and technology needs with third-party vendors</li><li>Installed, repaired and updated network cables for maximum speed and performance</li><li>Routinely maintained network components and equipment with updates and advanced repairs</li></ul></div>
-</div>
-</section>
-
-<section id="services">
-<h2>My <span class="g">services</span></h2>
-<div class="grid">
-<a class="card tilt" href="https://www.sabintiwari.com.np/portfolio-software.html"><h3>💻 Software Development</h3><p>Custom software built for your needs.</p></a>
-<a class="card tilt" href="https://www.sabintiwari.com.np/portfolio-website.html"><h3>🌐 Website Development</h3><p>Responsive, modern websites.</p></a>
-<a class="card tilt" href="https://www.sabintiwari.com.np/portfolio-details.html"><h3>🔧 Hardware Repair & Maintenance</h3><p>Reliable repair and upkeep of equipment.</p></a>
-<a class="card tilt" href="https://www.sabintiwari.com.np/portfolio-network.html"><h3>📡 Network Setup & Configuration</h3><p>LAN/WAN design, setup and configuration.</p></a>
-</div>
-</section>
-
-<section id="contact">
-<h2>Get in <span class="g">touch</span></h2>
-<p>📍 Kathmandu, Nepal · ✉️ <a class="l" href="mailto:sabintiwari27@gmail.com">sabintiwari27@gmail.com</a> · 📞 <a class="l" href="tel:+9779843772082">+977 9843772082</a></p>
-<form id="f">
-<input id="n" placeholder="Your Name" required><input id="e" type="email" placeholder="Your Email" required>
-<input id="s" placeholder="Subject" required><textarea id="m" rows="4" placeholder="Message" required></textarea>
-<button class="btn">Send Message</button>
-</form>
-</section>
+<div><a href="index.html">Home</a><a href="index.html#about">About</a><a href="index.html#resume">Resume</a><a href="index.html#services">Services</a><a href="index.html#contact">Contact</a></div></nav>
+<main>
+<p style="margin:0 0 6px;color:var(--b)">🌐 Service</p>
+<h1 class="g">Website Development</h1>
+<p>As a website developer, my passion is creating beautiful and functional websites that help businesses and individuals succeed online. I build responsive websites that look great and work seamlessly on all devices. Whether you need a simple website to showcase your work, a complex e-commerce site, or anything in between, I can bring your vision to life.</p>
+<div class="grid"><div class="card tilt"><span class="ico">📱</span><h3>Responsive Design</h3><p>Looks great on phones, tablets and desktops.</p></div><div class="card tilt"><span class="ico">🛒</span><h3>E-commerce</h3><p>Online stores to sell your products.</p></div><div class="card tilt"><span class="ico">🎨</span><h3>Modern Look</h3><p>Clean, fast and up-to-date with current practices.</p></div></div>
+<a class="btn" href="index.html#contact">Hire me</a><a class="btn o" href="index.html#services">← All services</a>
+</main>
 <footer>© Copyright Sabin Tiwari</footer>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 (function(){
-document.getElementById('f').addEventListener('submit',function(ev){ev.preventDefault();
- var b=encodeURIComponent(document.getElementById('m').value+'\n\n— '+document.getElementById('n').value+' ('+document.getElementById('e').value+')');
- location.href='mailto:sabintiwari27@gmail.com?subject='+encodeURIComponent(document.getElementById('s').value)+'&body='+b});
-var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting)x.target.style.width=x.target.dataset.w+'%'})});
-document.querySelectorAll('.bar i').forEach(function(i){io.observe(i)});
 document.querySelectorAll('.tilt').forEach(function(el){
  el.addEventListener('mousemove',function(e){var b=el.getBoundingClientRect(),x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;el.style.transform='rotateY('+x*14+'deg) rotateX('+-y*14+'deg) translateZ(8px)'});
  el.addEventListener('mouseleave',function(){el.style.transform=''})});
@@ -124,27 +51,17 @@ var c=document.getElementById('bg'),r;
 try{r=new THREE.WebGLRenderer({canvas:c,alpha:true,antialias:true})}catch(e){return}
 r.setPixelRatio(Math.min(devicePixelRatio,2));
 var s=new THREE.Scene(),cam=new THREE.PerspectiveCamera(60,1,.1,100);cam.position.z=8;
-var g=new THREE.Group();s.add(g);
-function mk(geo,col,w){return new THREE.Mesh(geo,new THREE.MeshBasicMaterial({color:col,wireframe:w,transparent:true,opacity:.5}))}
-var core=mk(new THREE.IcosahedronGeometry(2,1),0x7c5cff,true);g.add(core);
-var ring=mk(new THREE.TorusGeometry(3.2,.04,8,100),0x00e0ff,false);ring.rotation.x=1.2;g.add(ring);
-var cube=mk(new THREE.BoxGeometry(1,1,1),0xff5c8a,true);cube.position.set(-4,2,-2);s.add(cube);
-var knot=mk(new THREE.TorusKnotGeometry(.6,.18,64,8),0x00e0a0,true);knot.position.set(4,-2,-1);s.add(knot);
-var n=700,pos=new Float32Array(n*3);for(var i=0;i<n*3;i++)pos[i]=(Math.random()-.5)*30;
+var geos={ico:new THREE.IcosahedronGeometry(2.2,1),box:new THREE.BoxGeometry(2.4,2.4,2.4,3,3,3),knot:new THREE.TorusKnotGeometry(1.6,.5,100,12),torus:new THREE.TorusGeometry(2,.7,12,36)};
+var m=new THREE.Mesh(geos[document.body.dataset.shape],new THREE.MeshBasicMaterial({color:0x7c5cff,wireframe:true,transparent:true,opacity:.5}));
+m.position.set(3.5,0,-1);s.add(m);
+var n=600,pos=new Float32Array(n*3);for(var i=0;i<n*3;i++)pos[i]=(Math.random()-.5)*30;
 var pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pos,3));
 var pts=new THREE.Points(pg,new THREE.PointsMaterial({color:0x9aa0ff,size:.05}));s.add(pts);
-var mx=0,my=0,sy=0;
-addEventListener('mousemove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
-addEventListener('scroll',function(){sy=scrollY/Math.max(1,document.body.scrollHeight-innerHeight)});
+var mx=0,my=0;addEventListener('mousemove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
 function rs(){r.setSize(innerWidth,innerHeight,false);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()}
 addEventListener('resize',rs);rs();
 var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
-function loop(t){t*=.001;
- core.rotation.x=t*.2;core.rotation.y=t*.3;ring.rotation.z=t*.4;cube.rotation.x=t*.5;cube.rotation.y=t*.4;knot.rotation.x=t*.3;knot.rotation.y=t*.6;
- pts.rotation.y=t*.02+sy*2;
- g.position.x+=(mx*3-g.position.x)*.05;g.position.y+=(-my*2-sy*4-g.position.y)*.05;g.rotation.y=sy*Math.PI*2;
- cam.position.x+=(mx*1.5-cam.position.x)*.03;cam.position.y+=(-my*1.5-cam.position.y)*.03;cam.lookAt(0,0,0);
- r.render(s,cam);if(!reduce)requestAnimationFrame(loop)}
+function loop(t){t*=.001;m.rotation.x=t*.3+my;m.rotation.y=t*.4+mx*2;pts.rotation.y=t*.02;r.render(s,cam);if(!reduce)requestAnimationFrame(loop)}
 requestAnimationFrame(loop);
 })();
 </script>
